@@ -59,11 +59,16 @@ Run on emulator or physical device
 
 📸 Screenshots
 
-![image alt](https://github.com/simran18003/OrderMe-/blob/e82d1df5f0ce367f7cea42f5967f6d8b7a8f040a/screenshots/SplashScreen.jpeg)
-![image alt](https://github.com/simran18003/OrderMe-/blob/e82d1df5f0ce367f7cea42f5967f6d8b7a8f040a/screenshots/user.jpeg)
-![image alt](https://github.com/simran18003/OrderMe-/blob/e82d1df5f0ce367f7cea42f5967f6d8b7a8f040a/screenshots/adnim.jpeg)
-![image alt](https://github.com/simran18003/OrderMe-/blob/e82d1df5f0ce367f7cea42f5967f6d8b7a8f040a/screenshots/addFood.jpeg)
+<p align="center">
+  <img src="https://github.com/simran18003/OrderMe-/blob/e82d1df5f0ce367f7cea42f5967f6d8b7a8f040a/screenshots/SplashScreen.jpeg" width="250"/>
+  <img src="https://github.com/simran18003/OrderMe-/blob/e82d1df5f0ce367f7cea42f5967f6d8b7a8f040a/screenshots/user.jpeg" width="250"/>
+  <img src="https://github.com/simran18003/OrderMe-/blob/e82d1df5f0ce367f7cea42f5967f6d8b7a8f040a/screenshots/adnim.jpeg" width="250"/>
+  <img src="https://github.com/simran18003/OrderMe-/blob/e82d1df5f0ce367f7cea42f5967f6d8b7a8f040a/screenshots/addFood.jpeg" width="250"/>
+</p>
 
+📦 Download APK
+
+👉 Download APK screenshots/folder 
 
 🎯 What I Learned
 
