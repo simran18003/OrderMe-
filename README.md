@@ -59,7 +59,7 @@ Run on emulator or physical device
 
 📸 Screenshots
 
-(screenshots/SplashScreen.jpeg)
+!(screenshots/SplashScreen.jpeg)
 
 
 
