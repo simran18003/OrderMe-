@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Top-left corner image -->
+    <ImageView
+        android:id="@+id/image_top_left"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/noodles" />
+
+    <!-- Top-right corner image -->
+    <ImageView
+        android:id="@+id/image_top_right"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/pizzaslice" />
+
+    <!-- Bottom-left corner image -->
+    <ImageView
+        android:id="@+id/image_bottom_left"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/handbun" />
+
+    <!-- Bottom-right corner image -->
+    <ImageView
+        android:id="@+id/image_bottom_right"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/juice" />
+
+    <!-- Main logo in the center -->
+    <!-- Initially invisible for animation -->
+
+    <!-- Welcome TextView -->
+
+    <!-- Initially invisible for animation -->
+
+    <!-- Slogan TextView -->
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="144dp"
+        android:layout_height="331dp"
+        android:layout_above="@+id/welcome_text"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logoround"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/slogan_text"
+        android:layout_width="370dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="246dp"
+        android:text="We take care of your cravings"
+        android:textAlignment="center"
+        android:textColor="#FE6D17"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/slogan_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="22dp"
+        android:text="Welcome to OrderMe"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!-- Initially invisible for animation -->
+
+</RelativeLayout>

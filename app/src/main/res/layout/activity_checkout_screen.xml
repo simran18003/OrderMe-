@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Checkout Title -->
+    <TextView
+        android:id="@+id/tvCheckoutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Food Items RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCheckoutItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCheckoutTitle"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="16dp"/>
+
+    <!-- Address EditText -->
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your address"
+        android:layout_below="@id/recyclerViewCheckoutItems"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"/>
+
+    <!-- Total Amount TextView -->
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: $0.00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etAddress"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Radio Group for Payment Options -->
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalAmount"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rbCOD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash on Delivery"/>
+
+        <RadioButton
+            android:id="@+id/rbCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay with Card"/>
+    </RadioGroup>
+
+    <!-- Confirm Order Button -->
+    <Button
+        android:id="@+id/btnConfirmOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Order"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>

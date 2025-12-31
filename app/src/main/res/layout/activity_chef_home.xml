@@ -1,0 +1,230 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/home_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="20sp"
+                android:layout_marginStart="18dp"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:id="@+id/profile_button"
+                android:layout_width="49dp"
+                android:layout_height="47dp"
+                android:layout_gravity="end"
+                android:scaleType="fitCenter"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/restaurant" />
+
+        </LinearLayout>
+        <!-- Search Bar -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search..."/>
+
+        <!-- Banner with Image Slider -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/image_slider_chef"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <!-- Restaurant Info Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/restaurant_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/restaurant"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/restaurant_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/restaurant_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Description"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <!-- Bottom Navigation Bar -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_chef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/orange"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/nav_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Home"
+                    android:src="@drawable/homewhite" />
+
+                <ImageButton
+                    android:id="@+id/nav_add_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/foods"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Add Food" />
+
+                <ImageButton
+                    android:id="@+id/nav_view_orders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cartwhite"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="View Orders" />
+
+                <ImageButton
+                    android:id="@+id/nav_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/useroutlinewhite"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Profile" />
+
+            </LinearLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </LinearLayout>
+
+    <!-- Sliding Menu -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/profile_image_chef"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/restaurant"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/restaurant_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email@example.com"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp" />
+
+            <Button
+                android:id="@+id/edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/delete_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Profile"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+

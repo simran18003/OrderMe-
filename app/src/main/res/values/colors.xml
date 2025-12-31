@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FE6D17</color>
+    <color name="dot_active">#000000</color>
+    <color name="dot_inactive">#C0C0C0</color>
+
+</resources>

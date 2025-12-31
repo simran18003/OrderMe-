@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Top-left corner image -->
+    <ImageView
+        android:id="@+id/image_top_left"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/noodles" />
+
+    <!-- Top-right corner image -->
+    <ImageView
+        android:id="@+id/image_top_right"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/pizzaslice" />
+
+    <!-- Bottom-left corner image -->
+    <ImageView
+        android:id="@+id/image_bottom_left"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/handbun" />
+
+    <!-- Bottom-right corner image -->
+    <ImageView
+        android:id="@+id/image_bottom_right"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/juice" />
+
+    <!-- Small logo at the top center -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/logoround" />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImage"
+        android:layout_marginTop="24dp">
+
+        <!-- Name EditText (user) -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="0dp"
+            android:hint="Name"
+            android:visibility="gone" />
+
+        <!-- Restaurant Name EditText (admin) -->
+        <EditText
+            android:id="@+id/editTextRestaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:hint="Restaurant Name"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/framelayout"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="Email" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <!-- Action Buttons (Login/Sign Up) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearlayout"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp">
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign Up" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login" />
+    </LinearLayout>
+
+    <!-- Google Sign-In Button -->
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Sign in with Google" />
+
+    <!-- Phone Sign-In Button -->
+    <Button
+        android:id="@+id/btn_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_google"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Sign in with Phone" />
+</RelativeLayout>

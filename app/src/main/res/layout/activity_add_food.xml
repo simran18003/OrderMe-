@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- "Add Food" TextView -->
+    <TextView
+        android:id="@+id/tvAddFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Food"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_below="@id/tvAddFood"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    <!-- ImageButton to Select Image -->
+    <ImageButton
+        android:id="@+id/imgButtonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera"
+        android:contentDescription="Select Image"
+        android:layout_centerHorizontal="true" />
+    </FrameLayout>
+
+
+    <!-- EditText for Food Name -->
+    <EditText
+        android:id="@+id/etFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Name"
+        android:layout_below="@id/frameLayout"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+
+    <!-- EditText for Food Description -->
+    <EditText
+        android:id="@+id/etFoodDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Description"
+        android:layout_below="@id/etFoodName"
+        android:layout_marginTop="16dp"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <!-- EditText for Food Price -->
+    <EditText
+        android:id="@+id/etFoodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Price"
+        android:layout_below="@id/etFoodDescription"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal" />
+
+    <!-- Button to Upload Food Data -->
+    <Button
+        android:id="@+id/btnUploadFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_below="@id/etFoodPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <!-- Add in activity_add_food.xml -->
+    <Button
+        android:id="@+id/btnViewFoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Foods"
+        android:layout_below="@id/btnUploadFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>

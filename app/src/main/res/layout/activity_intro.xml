@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Top-left corner image -->
+    <ImageView
+        android:id="@+id/image_top_left"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/noodles" />
+
+    <!-- Top-right corner image -->
+    <ImageView
+        android:id="@+id/image_top_right"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/pizzaslice" />
+
+    <!-- Bottom-left corner image -->
+    <ImageView
+        android:id="@+id/image_bottom_left"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/handbun" />
+
+    <!-- Bottom-right corner image -->
+    <ImageView
+        android:id="@+id/image_bottom_right"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/juice" />
+    <!-- ViewPager for sliding images in the center -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="409dp"
+        android:layout_height="346dp"
+        android:layout_centerInParent="true" />
+
+    <!-- Dots indicator -->
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewPager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" />
+
+    <!-- Go Button -->
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dotsLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Get Started"
+        android:visibility="gone" /> <!-- Initially hidden -->
+
+</RelativeLayout>

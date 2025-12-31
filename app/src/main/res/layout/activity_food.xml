@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/tvFoodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Sort Button -->
+    <ImageButton
+        android:id="@+id/btnSort"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_alignTop="@id/tvFoodTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Sort"
+        android:scaleType="fitXY"
+        android:src="@drawable/filter" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:layout_below="@id/tvFoodTitle"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp" />
+
+    <!-- No Results TextView -->
+    <TextView
+        android:id="@+id/noResultsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No results found"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!-- Food Items RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/etSearch"
+        android:layout_above="@id/btnGoToCart"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Go to Cart button, sticking to the bottom -->
+    <Button
+        android:id="@+id/btnGoToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Cart"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

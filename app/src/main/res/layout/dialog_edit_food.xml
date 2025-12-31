@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Food Image -->
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Select Image Button -->
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Image"
+        android:layout_below="@id/imgFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Food Name EditText -->
+    <EditText
+        android:id="@+id/etFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Name"
+        android:layout_below="@id/btnSelectImage"
+        android:layout_marginTop="16dp" />
+
+    <!-- Food Description EditText -->
+    <EditText
+        android:id="@+id/etFoodDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Description"
+        android:layout_below="@id/etFoodName"
+        android:layout_marginTop="8dp" />
+
+    <!-- Food Price EditText -->
+    <EditText
+        android:id="@+id/etFoodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Price"
+        android:layout_below="@id/etFoodDescription"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

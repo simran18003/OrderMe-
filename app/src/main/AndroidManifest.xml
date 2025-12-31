@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logoround"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoround"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrderMe"
+        tools:targetApi="31">
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".splashscreen.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Intro Activity -->
+        <activity
+            android:name=".introscreen.IntroActivity">
+        </activity>
+
+        <!-- Login/Signup Activity -->
+        <activity
+            android:name=".loginsignup.LoginSignupActivity">
+        </activity>
+
+        <!-- User role Activity -->
+        <activity
+            android:name=".loginsignup.UserRoleActivity">
+        </activity>
+
+        <!-- LoginSignupDetails Activity -->
+        <activity
+            android:name=".loginsignup.LoginSignupDetailsActivity">
+        </activity>
+
+        <!-- Phone authentication Activity -->
+        <activity
+            android:name=".loginsignup.PhoneAuthActivity">
+        </activity>
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity">
+        </activity>
+
+        <!-- FoodieHomeActivity -->
+        <activity
+            android:name=".foodie.FoodieHomeActivity">
+        </activity>
+
+        <!-- FoodActivity -->
+        <activity
+            android:name=".foodie.FoodActivity">
+        </activity>
+
+        <!-- FoodieProfileActivity -->
+        <activity
+            android:name=".foodie.FoodieProfileActivity">
+        </activity>
+
+        <!-- ViewCartActivity -->
+        <activity
+            android:name=".foodie.ViewCartActivity">
+        </activity>
+
+        <!-- CheckoutActivity -->
+        <activity
+            android:name=".foodie.CheckoutScreen">
+        </activity>
+
+        <!-- ChefHomeActivity -->
+        <activity
+            android:name=".chef.ChefHomeActivity">
+        </activity>
+
+        <!-- AddFoodActivity -->
+        <activity
+            android:name=".chef.AddFoodActivity">
+        </activity>
+
+        <!-- ViewFoodActivity -->
+        <activity
+            android:name=".chef.ViewFoodActivity">
+        </activity>
+
+        <!-- ViewOrdersActivity -->
+        <activity
+            android:name=".chef.ViewOrdersActivity">
+        </activity>
+
+        <!-- ChefProfileActivity -->
+        <activity
+            android:name=".chef.ChefProfileActivity">
+        </activity>
+
+    </application>
+
+</manifest>

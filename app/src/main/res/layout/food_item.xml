@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/white"
+    android:elevation="4dp">
+
+    <!-- Food Image -->
+    <ImageView
+        android:id="@+id/imgFoodChef"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Food Name -->
+    <TextView
+        android:id="@+id/tvFoodNameChef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgFoodChef"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Food Description -->
+    <TextView
+        android:id="@+id/tvFoodDescriptionChef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFoodNameChef"
+        android:layout_toEndOf="@id/imgFoodChef"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Food Price -->
+    <TextView
+        android:id="@+id/tvFoodPriceChef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFoodDescriptionChef"
+        android:layout_toEndOf="@id/imgFoodChef"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Edit Button -->
+    <Button
+        android:id="@+id/btnEditFoodChef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_below="@id/tvFoodPriceChef"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/btnDeleteFoodChef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_below="@id/tvFoodPriceChef"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

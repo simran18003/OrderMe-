@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/white"
+    android:elevation="4dp">
+
+    <!-- Food Image -->
+    <ImageView
+        android:id="@+id/imgFoodFoodie"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Food Name -->
+    <TextView
+        android:id="@+id/tvFoodNameFoodie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgFoodFoodie"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Food Description -->
+    <TextView
+        android:id="@+id/tvFoodDescriptionFoodie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFoodNameFoodie"
+        android:layout_toEndOf="@id/imgFoodFoodie"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Food Price -->
+    <TextView
+        android:id="@+id/tvFoodPriceFoodie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFoodDescriptionFoodie"
+        android:layout_toEndOf="@id/imgFoodFoodie"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Quantity Control -->
+    <LinearLayout
+        android:id="@+id/quantityControlFoodie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tvFoodPriceFoodie"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/btnMinusFoodie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Quantity Text -->
+        <TextView
+            android:id="@+id/tvQuantityFoodie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/btnPlusFoodie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+    </LinearLayout>
+</RelativeLayout>
