@@ -66,9 +66,6 @@ Run on emulator or physical device
   <img src="https://github.com/simran18003/OrderMe-/blob/e82d1df5f0ce367f7cea42f5967f6d8b7a8f040a/screenshots/addFood.jpeg" width="250"/>
 </p>
 
-📦 Download APK
-
-👉 Download APK screenshots/folder 
 
 🎯 What I Learned
 
