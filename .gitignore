@@ -16,6 +16,8 @@ local.properties
 google-services.json
 .idea/
 *.apk
+*.jks
+*.keystore
 
 
 
